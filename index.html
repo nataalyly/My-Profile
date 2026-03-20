@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Nathaly Angelica Wijaya</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset CSS agar konsisten di semua browser */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif; /* Ganti font jadi Poppins */
+            
+            /* Background Gradient Ungu-Biru Kamu */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            
+            /* Setup posisi tengah & aman untuk HP */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px; /* Jarak aman di pinggir layar HP */
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95); /* Putih sedikit transparan */
+            padding: 40px 30px;
+            border-radius: 25px; /* Sudut kartu lebih membulat */
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2); /* Bayangan lembut */
+            text-align: center;
+            width: 100%;
+            max-width: 380px; /* Ukuran ideal buat HP & Laptop */
+            
+            /* Animasi Muncul */
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white; /* Bingkai putih di foto */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 1.4rem; /* Ukuran font judul disesuaikan */
+            font-weight: 600;
+            margin-bottom: 5px;
+            line-height: 1.3;
+        }
+
+        p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* Styling Tombol Aesthetic (Pill Shape) */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px 0;
+            margin-bottom: 15px; /* Jarak antar tombol */
+            text-decoration: none;
+            color: white;
+            border-radius: 50px; /* Membuat tombol lonjong (Pill) */
+            font-weight: 500;
+            transition: transform 0.2s, opacity 0.2s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px); /* Efek naik dikit pas di-hover */
+        }
+
+        .btn:active {
+            transform: scale(0.98); /* Efek tekan */
+        }
+
+        /* Warna Tombol */
+        .btn-instagram { 
+            /* Gradient asli Instagram */
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        }
+        
+        .btn-github { 
+            background-color: #333333; 
+        }
+
+        /* Keyframes untuk animasi muncul */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="pfp.jpg" alt="Nathaly Angelica Wijaya" class="profile-img">
+
+        <h1>Nathaly Angelica Wijaya</h1>
+        <p>B28 Computer Science<br>BINUS University @Malang</p>
+
+        <a href="https://instagram.com/nataa.lyly" class="btn btn-instagram">
+            Instagram
+        </a>
+        <a href="https://github.com/nataalyly" class="btn btn-github">
+            GitHub
+        </a>
+    </div>
+
+</body>
+</html>
