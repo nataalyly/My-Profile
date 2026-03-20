@@ -26,6 +26,11 @@
             padding: 20px;
         }
 
+        .container {
+            width: 100px;
+            max-width: 800px;
+        }
+
         .card {
             background: rgba(255, 255, 255, 0.95);
             padding: 40px 30px;
@@ -65,6 +70,11 @@
             border: 4px solid white;
             box-shadow: 0 5px 15px rgba(0,0,0,0.15);
             margin-bottom: 20px;
+        }
+
+        .profile-img: hover {
+            transform: scale(1.05);
+            transition: 0.3s;
         }
 
         h1 {
@@ -121,30 +131,31 @@
 </head>
     
 <body>
-    <div class="card">
-        <img src="pfp.jpg" alt="Nathaly Angelica Wijaya" class="profile-img">
-
-        <h1>Nathaly Angelica Wijaya</h1>
-        <p>Computer Science Student<br>Future Game Developer 🚀<br>BINUS University @Malang</p>
-
-        <a href="https://instagram.com/nataa.lyly" target="_blank" class="btn btn-instagram">
-            <i class="fab fa-instagram"></i> Instagram
-        </a>
-        <a href="https://github.com/nataalyly" target="_blank" class="btn btn-github">
-            <i class="fab fa-github"></i> GitHub
-        </a>
-
-        <!-- PROJECTS -->
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects">
-            <p>✨ BNCC Landing Page</p>
-            <p>🎮 Unity 2D Game (in progress)</p>
+    <div class="container">
+        <div class="card">
+            <img src="pfp.jpg" alt="Nathaly Angelica Wijaya" class="profile-img">
+    
+            <h1>Nathaly Angelica Wijaya</h1>
+            <p>Computer Science Student<br>Future Game Developer 🚀<br>BINUS University @Malang</p>
+    
+            <a href="https://instagram.com/nataa.lyly" target="_blank" class="btn btn-instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://github.com/nataalyly" target="_blank" class="btn btn-github">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+    
+            <!-- PROJECTS -->
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects">
+                <p>✨ BNCC Landing Page</p>
+                <p>🎮 Unity 2D Game (in progress)</p>
+            </div>
+    
+            <!-- CONTACT -->
+            <h2 class="section-title">Contact</h2>
+            <p>Email: nathalyangelica41@gmail.com</p>
         </div>
-
-        <!-- CONTACT -->
-        <h2 class="section-title">Contact</h2>
-        <p>Email: nathalyangelica41@gmail.com</p>
     </div>
-
 </body>
 </html>
